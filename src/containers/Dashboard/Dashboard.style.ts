@@ -13,9 +13,7 @@ export const Header = styled("header", {
   display: "grid",
   gridTemplateColumns: "7fr 3fr",
   alignItems: "center",
-  padding: "1rem 2rem ",
-  // Mudar aqui
-  backgroundColor: "red"
+  padding: "1rem 2rem "
 })
 
 export const Search = styled("div", {
