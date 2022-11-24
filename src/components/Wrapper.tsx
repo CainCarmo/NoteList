@@ -8,6 +8,7 @@ const Wrapper = (props: WrapperType) => {
       css={{
         display: props.display,
         margin: props.margin,
+        position: props.position,
         padding: props.padding,
         alignItems: props.alignItems,
         flexDirection: props.flexDirection,

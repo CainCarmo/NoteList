@@ -1,8 +1,9 @@
 type WrapperType = {
-  display: string
   children: React.ReactNode
+  display: string
   margin?: string
   padding?: string
+  position?: string
   alignItems?: string
   flexDirection?: string
   justifyContent?: string
