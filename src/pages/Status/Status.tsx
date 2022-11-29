@@ -1,5 +1,10 @@
 import { Helmet } from "react-helmet-async"
 
+import { Header } from "../../components/Header"
+import { Title } from "../../components/Title"
+
+import { StatusArea } from "./Status.style"
+
 export const Status = () => {
   return (
     <>
@@ -7,7 +12,11 @@ export const Status = () => {
         <title>Status | NoteList</title>
       </Helmet>
 
-      <h1>Status</h1>
+      <StatusArea>
+        <Header display="flex" alignItems="center" justifyContent="start">
+          <Title fontSize="1.5em" text="Status" />
+        </Header>
+      </StatusArea>
     </>
   )
 }

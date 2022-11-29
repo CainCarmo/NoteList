@@ -1,5 +1,10 @@
 import { Helmet } from "react-helmet-async"
 
+import { Header } from "../../components/Header"
+import { Title } from "../../components/Title"
+
+import { ConfigurationArea } from "./Configuration.style"
+
 export const Configuration = () => {
   return (
     <>
@@ -7,7 +12,11 @@ export const Configuration = () => {
         <title>Configuração | NoteList</title>
       </Helmet>
 
-      <h1>Configurações</h1>
+      <ConfigurationArea>
+        <Header display="flex" alignItems="center" justifyContent="start">
+          <Title fontSize="1.5em" text="Configurações" />
+        </Header>
+      </ConfigurationArea>
     </>
   )
 }
