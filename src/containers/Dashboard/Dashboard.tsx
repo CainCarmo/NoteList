@@ -1,12 +1,14 @@
-import Wrapper from "../../components/Wrapper"
+import { Wrapper } from "../../components/Wrapper"
 import { DashboardArea, Header, Search, UserArea } from "./Dashboard.style"
+
+import Icon from "../../assets/icon/user.jpg"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faMagnifyingGlass, faInbox, faChevronDown } from "@fortawesome/free-solid-svg-icons"
 
-import Icon from "../../assets/icon/user.jpg"
+import { Routing } from "../../routes"
 
-const Dashboard = () => {
+export const Dashboard = () => {
   return (
     <DashboardArea>
       <Header>
@@ -15,11 +17,10 @@ const Dashboard = () => {
           <Wrapper position="relative" display="flex" alignItems="center">
             <input
               type="text"
-              name="search__input"
               id="search__input"
-              placeholder="Digite aqui . . ."
+              name="search__input"
+              placeholder="Procure por algo . . ."
             />
-            <div className="underline"></div>
           </Wrapper>
         </Search>
         <UserArea>
@@ -29,12 +30,13 @@ const Dashboard = () => {
               <span>Cainã Carmo</span>
               <FontAwesomeIcon icon={faChevronDown} />
             </div>
-            <img src={Icon} alt="Foto do Usuário" />
+            <figure id="user__picture">
+              <img src={Icon} alt="Foto do Usuário" />
+            </figure>
           </Wrapper>
         </UserArea>
       </Header>
+      <Routing />
     </DashboardArea>
   )
 }
-
-export default Dashboard

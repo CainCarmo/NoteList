@@ -1,7 +1,5 @@
 import { styled } from "../environments/stitches.config"
 
-const TitleArea = styled("p", {
-
+export const TitleArea = styled("span", {
+  fontWeight: "600"
 })
-
-export default TitleArea

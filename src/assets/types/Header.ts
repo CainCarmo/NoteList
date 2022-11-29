@@ -1,7 +1,6 @@
-export type WrapperType = {
+export type HeaderType = {
   children: React.ReactNode
   display: string
-  gap?: string
   margin?: string
   padding?: string
   position?: string

@@ -1,13 +1,16 @@
-import Sidebar from "./containers/Sidebar/Sidebar"
-import Dashboard from "./containers/Dashboard/Dashboard"
+import { HelmetProvider } from "react-helmet-async"
+import { BrowserRouter as Router } from "react-router-dom"
 
-const App = () => {
+import { Sidebar } from "./containers/Sidebar/Sidebar"
+import { Dashboard } from "./containers/Dashboard/Dashboard"
+
+export const App = () => {
   return (
-    <>
-      <Sidebar />
-      <Dashboard />
-    </>
+    <HelmetProvider>
+      <Router>
+        <Sidebar />
+        <Dashboard />
+      </Router>
+    </HelmetProvider>
   )
 }
-
-export default App

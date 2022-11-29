@@ -5,7 +5,12 @@ export const SidebarArea = styled("aside", {
   width: "100%",
   display: "grid",
   gridAutoRows: "1fr 3fr 1fr",
-  backgroundColor: "#F2DEBA"
+  backgroundColor: "#F2DEBA",
+  "& a": {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center"
+  }
 })
 
 export const Logo = styled("h1", {
@@ -22,12 +27,12 @@ export const Option = styled("li", {
   padding: "1rem 1.5rem",
   listStyle: "none",
   fontSize: "1.1em",
-  transition: ".3s all",
+  transition: ".2s all",
   borderRadius: "30px",
   backgroundColor: "transparent",
   cursor: "pointer",
   "&:hover": {
-    backgroundColor: "#F8F8FF"
+    backgroundColor: "#3A8891"
   },
   "& > svg": {
     marginRight: "20px"

@@ -1,13 +1,11 @@
-import { WrapperArea } from "./Wrapper.style"
-import { WrapperType } from "../assets/types/Wrapper"
+import { HeaderArea } from "./Header.style"
+import { HeaderType } from "../assets/types/Header"
 
-export const Wrapper = (props: WrapperType) => {
+export const Header = (props: HeaderType) => {
   return (
-
-    <WrapperArea
+    <HeaderArea
       css={{
         display: props.display,
-        gap: props.gap,
         margin: props.margin,
         position: props.position,
         padding: props.padding,
@@ -16,11 +14,10 @@ export const Wrapper = (props: WrapperType) => {
         justifyContent: props.justifyContent,
         gridTemplateArea: props.gridTemplateArea,
         gridTemplateRows: props.gridTemplateRows,
-        gridTemplateColumns: props.gridTemplateColumns,
+        gridTemplateColumns: props.gridTemplateColumns
       }}
     >
       {props.children}
-    </WrapperArea>
-
+    </HeaderArea>
   )
 }
